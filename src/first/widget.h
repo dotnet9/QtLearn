@@ -15,6 +15,17 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+private slots:
+    void on_pushButton_clear_clicked();
+
+    void on_checkBox_underline_clicked(bool checked);
+
+    void on_checkBox_italic_clicked(bool checked);
+
+    void on_checkBox_bold_clicked(bool checked);
+
+    void do_fontColor();
+
 private:
     Ui::Widget *ui;
 };
